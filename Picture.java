@@ -21,7 +21,7 @@ public class Picture
         // Get a reference to the canvas for this drawing and set its title.
         pic = Canvas.getCanvas();
         pic.setTitle("Bouncing Ball");
-        pic.setBackgroundColor("white");
+        pic.setBackgroundColor("blue");
         
         // Turn off automatic redrawing
         pic.pause(true);
