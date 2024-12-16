@@ -13,6 +13,7 @@ public class Picture
     // Private member (instance) variables
     private Canvas pic;
     private Circle ball; // The sample ball to animate
+    private Rect box;
     private int dx = 5; // Speed in x direction for the sample ball
     private int dy = -5; // Speed in y direction for the sample ball
     
@@ -28,6 +29,9 @@ public class Picture
         
         ball = new Circle();
         ball.makeVisible();
+        
+        box = new Rect();
+        box.makeVisible();
         
         // Show the initial picture
         pic.redraw();
