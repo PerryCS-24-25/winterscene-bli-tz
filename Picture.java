@@ -14,6 +14,7 @@ public class Picture
     private Canvas pic;
     private Circle ball; // The sample ball to animate
     private Rect box;
+    private Triangle roof;
     private int dx = 5; // Speed in x direction for the sample ball
     private int dy = -5; // Speed in y direction for the sample ball
     
@@ -32,7 +33,10 @@ public class Picture
         
         box = new Rect();
         box.makeVisible();
-        
+
+        roof = new Triangle();
+        roof.makeVisible();
+
         // Show the initial picture
         pic.redraw();
     }
